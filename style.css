@@ -48,7 +48,7 @@
 */
 
      body {
-      background-color: rgb(255, 251, 12);
+      background-color: rgb(61, 211, 231);
       color: black;
       font-family: Arial, sans-serif;
      }
@@ -58,4 +58,11 @@
       text-align: center;
       padding: 20px;
       color: white;
+     }
+     section {
+      margin: 20px auto;
+      border: 5px solid #000000;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
      }
