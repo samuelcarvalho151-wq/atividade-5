@@ -42,6 +42,15 @@
 //    - Use um for ou forEach para percorrer cada um
 //    - Leia o valor: elemento.getAttribute('data-valor')
 //    - Aplique a largura: elemento.style.width = valor + '%'
+
+      const barrasProgresso = document.querySelectorAll('.progresso');
+
+      barrasProgresso.forEach(function(barra) {
+        const valor = barra.getAttribute('data-valor');
+        barra.style.width = valor + '%';
+      });
+
+
 //
 // 4. FORMULARIO (#form-contato)
 //    - Pegue o formulario com getElementById()
