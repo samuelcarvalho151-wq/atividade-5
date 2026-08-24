@@ -73,3 +73,10 @@
       border-radius: 10px;
       cursor: pointer;
      }
+     form input, form textarea {
+      padding:10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+     }
