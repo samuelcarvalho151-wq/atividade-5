@@ -48,7 +48,14 @@
 */
 
      body {
-      background-color: rgb(87, 236, 132);
+      background-color: rgb(255, 251, 12);
       color: black;
       font-family: Arial, sans-serif;
+     }
+     
+     header {
+      background-color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 20px;
+      color: white;
      }
