@@ -19,7 +19,6 @@
         }
       });
 
-
 //
 // 2. CONTADOR DE VISITAS (#btn-visita e #numero-visitas)
 //    - Crie uma variavel: let visitas = 0;
@@ -27,6 +26,17 @@
 //    - No clique do botao, incremente a variavel (visitas++)
 //    - Atualize o texto do span: span.textContent = visitas
 //
+
+      let visitas = 0;
+      const btnvisita = document.getElementById('btn-visita');
+      const spanvisitas = document.getElementById('numero-visitas')
+      
+      btnvisita.addEventListener('click', function() {
+        visitas++;
+        spanvisitas.textContent = visitas;
+      });
+
+
 // 3. BARRAS DE PROGRESSO (.progresso)
 //    - Pegue todos os elementos com document.querySelectorAll('.progresso')
 //    - Use um for ou forEach para percorrer cada um
