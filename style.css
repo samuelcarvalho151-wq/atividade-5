@@ -54,7 +54,7 @@
      }
      
      header {
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(4, 58, 88);
       text-align: center;
       padding: 20px;
       color: white;
@@ -86,4 +86,10 @@
       height: 20px;
       border-radius: 10px;
       overflow: hidden;
+     }
+     modo-escuro {
+      background-color: #000000;
+      color: #fff;
+      border: 1px solid #fff;
+
      }
