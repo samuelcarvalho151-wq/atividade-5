@@ -64,18 +64,21 @@
 //
 // Comece pelo exercicio 1 e va ate o 4. Boa sorte!
 
-    document.getElementById('form-contato').addEventListener('submit', function(evento) {
-        evento.preventDefault();
-        const nome = document.getElementById('nome').value;
-        const email = document.getElementById('email').value;
-        const mensagem = document.getElementById('mensagem').value;
+   document.getElementById('form-contato').addEventListener('submit', function(evento) {
+    evento.preventDefault();
+    
+    const nome = document.getElementById('nome').value;
+    const mensagem = document.getElementById('mensagem').value;
+    
+    if (nome === '' || mensagem === '') {
+        alert('Preencha todos os campos!');
+    } else { 
+        document.getElementById('resposta-form').textContent = `Obrigado, ${nome}! Sua mensagem foi enviada.`;
+        
+        document.getElementById('nome').value = '';
+        document.getElementById('mensagem').value = '';
+    }
+});
 
-        if (nome === '' || email === '' || mensagem === '') {
-            alert('Preencha todos os campos!');
-        } else {
-            document.getElementById('resposta-form').textContent = `Obrigado, ${nome}! Sua mensagem foi enviada.`;
-            document.getElementById('nome').value = '';
-            document.getElementById('email').value = '';
-            document.getElementById('mensagem').value = '';
-        }
-    });
+       
+    
