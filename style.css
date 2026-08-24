@@ -93,3 +93,12 @@
       border: 1px solid #fff;
 
      }
+     footer {
+
+      background-color: rgb(4, 58, 88);
+      text-align: center;
+      padding: 10px;
+      color: white;
+      border: 1px solid #fff;
+      
+     }
